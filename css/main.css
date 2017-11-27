@@ -1,15 +1,104 @@
 .main-container{
 	border-top: solid 2px #ff8925;
 	width: 100%;
+	margin:0;
+	padding: 0;
 }
-.navbar{
-	background-color: #ff8925;
-	border:none;
+
+
+/*HEADER*/
+.page-header{
+	border:0;
+	height: 55px;
+}
+.img-responsive{
+	height: 60px;
+	width: auto;
+}
+#exampleInputEmail2{
+	background-color: #DCDCDC;
+	width: 300px;
+	border-radius: 20px 0 0 20px;
+}
+.search-btn{
+	width: 70px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0 20px 20px 0;
+}
+.glyphicon-phone{
+	float: left;
+	margin-right: 10px;
+}
+.login{
+	background-color: #ff8a20;
 	border-radius: 0;
-	margin: 0;
+	color:#fff;
+}
+
+
+/*NAVBAR*/
+nav{
+	background-color: #ff8925;
+}
+ul{
+	margin:0;
+	padding: 0;
+}
+li{
+	display: block;
+	list-style: none;
+	padding: 0;
+	float: left;
+	width: 14.21%;
+	border-right: solid 1px #DCDCDC;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+}
+li:hover{
+	background-color: #000;
 }
 a{
 	color: #fff;
+}
+
+a:hover{
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+}
+a:active{
+	background-color: #000;
+	color: #fff;
+}
+/*NAVBAR DROPDOWN*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff8925;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: #000;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #000;
 }
 
 .orange-b {
