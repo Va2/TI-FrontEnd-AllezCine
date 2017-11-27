@@ -4,6 +4,20 @@
 	margin:0;
 	padding: 0;
 }
+h2 {
+	position: relative;
+	margin-left: 100px;
+}
+h2:before {
+	content: ' ';
+	background-color: #ff8925;
+	display: inline-block;
+	width: 6px;
+	height: 45px;
+	position: absolute;
+	top: -5px;
+	left: -30px;
+}
 a {
 	color: #fff;
 }
@@ -131,11 +145,11 @@ nav li:hover{
 }
 /*LEFT*/
 .jumboleft {
+	display: inline-block;
 	box-sizing: border-box;
 	width: 75%;
 	height: 500px;
 	background-color: grey;
-	float: left;
 	position: relative;
 }
 .jumboleft img{
@@ -186,17 +200,10 @@ nav li:hover{
 	width: calc( 100% - 180px );
 	color: #fff;
 }
-.orange-b {
-	background-color: #ff8925;
-	padding: 7px 50px;
-	border: none;
-	font-weight: 600;
-	margin-bottom: 10px;
-}
-
 
 /*RIGHT*/
 .jumboright {
+	display: inline-block;
 	box-sizing: border-box;
 	width: 25%;
 	height: 500px;
