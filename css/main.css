@@ -8,7 +8,7 @@
 	border-radius: 0;
 	margin: 0;
 }
-a{
+a {
 	color: #fff;
 }
 
@@ -171,6 +171,8 @@ a{
 #contact ul li {
 	padding: 7px 0;
 }
+
+
 .carre-gris {
 	height: 225px;
 	width: 100%;
@@ -194,6 +196,49 @@ a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+#contact .social li {
+	padding: 2px;
+}
+#contact .social a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+}
+#contact .social li a i {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin-right: 10px;
+}
+#contact .social .face a {
+	background-color: #3b5998;
+}
+#contact .social .twit a {
+	background-color: #00aced;
+}
+#contact .social .goog a {
+	background-color: #D34836;
+}
+.send-message {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	margin-top: 20px;
+	padding: 10px 20px;
+}
+
+#formulaire {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#formulaire input, #formulaire textarea {
+	margin-bottom: 13px;
+	border:1px solid grey;
+	box-shadow: none;
+	border-radius: 3px;
 }
 
 /******************* /CONTACT *********************/
