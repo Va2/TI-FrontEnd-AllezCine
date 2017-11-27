@@ -1,0 +1,13 @@
+.main-container{
+	border-top: solid 2px #ff8925;
+	width: 100%;
+}
+.navbar{
+	background-color: #ff8925;
+	border:none;
+	border-radius: 0;
+	margin: 0;
+}
+a{
+	color: #fff;
+}
