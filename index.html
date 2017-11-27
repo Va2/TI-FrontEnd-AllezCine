@@ -20,55 +20,82 @@
 	<body>
 		<div class="main-container">
 			<!-- HEADER -->
-			<div class="container">
+			<div class="container header">
 				<header class="page-header">
 				  <div class="row">
-				  	  <div class="col-sm-3">LOGO</div>
-				  	  <div class="col-sm-6">Search FORM</div>
-				  	  <div class="col-sm-2">TEL</div>
-				  	  <div class="col-sm-1">Login BUTTON</div>
+				  	  <img class="col-sm-3 img-responsive" src="img/movieLogo.png"  alt="Responsive image">
+				  	  <div class="col-sm-6">
+						<form class="form-inline">
+						  <div class="form-group">
+						    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Search">
+						  </div>
+						  <button type="submit" class="btn btn-default search-btn">Go</button>
+						</form>
+				  	  </div>
+				  	  <div class="col-sm-2">
+				  	  	<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+				  	  	<p class="header">+32 (0)2/ 675 55 47</p>
+				  	  </div>
+				  	  <div class="col-sm-1">
+				  	  	<button type="button" class="btn btn-default login">LOGIN</button>
+				  	  </div>
 				  </div>
 				</header>
-				
 			</div>
-
-			<!-- NAVBAR -->
-			<nav class="navbar navbar-inverse">
-				<div class="container">
-			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#">HOME</a></li>
-			      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Movies <span class="caret"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a href="#">Action</a></li>
-			          <li><a href="#">Thriller</a></li>
-			          <li><a href="#">Comedy</a></li>
-			        </ul>
-			      </li>
-			      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
-			        <ul class="dropdown-menu">
-			          <li><a href="#">Action</a></li>
-			          <li><a href="#">Thriller</a></li>
-			          <li><a href="#">Comedy</a></li>
-			        </ul>
-			      </li>
-			    </ul>
-				</div>
-			</nav>
 		</div>
 
-		<div class="container-fluid">
-			<!-- JUMBOTRON -->
-			<div class="row">
-				<div class="col-sm-9">
-					<div class="jumbotron">
+				<!-- NAVBAR -->
+				<div class="navbar">
+					<div class="container">
+						  <a class="menu_item" href="#home">Home</a>
+						  <div class="dropdown">
+						    <button class="dropbtn menu_item">Movies 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Action</a>
+						      <a href="#">Animation</a>
+						      <a href="#">Comedy</a>
+						    </div>
+						  </div> 
+						  <div class="dropdown">
+						    <button class="dropbtn menu_item">Series 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#">Action</a>
+						      <a href="#">Animation</a>
+						      <a href="#">Comedy</a>
+						    </div>
+						  </div> 
 					</div>
 				</div>
 
-				<div class="col-sm-3">
-					
-				</div>
-			</div>
-		</div>
+
+				<!-- <nav>
+					<div class="container">
+						<ul>
+							<li><a href="#" class="active">HOME</a></li>
+							<li>
+								<div class="dropdown">
+								  <a class="dropbtn" href="#">Movies</a>
+								  <div class="dropdown-content">
+								    <a href="#">Action</a>
+								    <a href="#">Animation</a>
+								    <a href="#">Comedy</a>
+								  </div>
+								</div>
+							</li>
+							<li><a href="#">Series</a></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</nav> -->
+
+
 
 
 		<div class="container">
