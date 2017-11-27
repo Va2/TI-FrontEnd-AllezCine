@@ -256,8 +256,41 @@ nav li:hover{
 .jumboright li.active h3 {
 	color: #000;
 }
-
 /******************* /JUMBOTRON *********************/
+/******************* LIBRARY *********************/
+.library-movie{
+	width: 100%;
+	display: flex;
+	border: solid 2px #DCDCDC;
+}
+.library-featured{
+	width: 100%;
+	display: flex;
+	margin: 20px 0;
+}
+.library-movie-col{
+	width: 20%;
+}
+.library-featured-col{
+	width: 16.66%;
+}
+.library-container{
+	margin: 20px;
+	text-align: center;
+}
+.library img {	
+	width:100%;
+	display: inline-block;
+
+}
+span.year{
+	float: left;
+}
+span.genre{
+	float: right;
+	font-weight: 900;
+}
+/******************* /LIBRARY *********************/
 /******************* FOOTER *********************/
 
 footer {
