@@ -4,61 +4,6 @@
 	margin:0;
 	padding: 0;
 }
-
-
-/*HEADER*/
-.page-header{
-	border:0;
-	height: 55px;
-}
-.img-responsive{
-	height: 60px;
-	width: auto;
-}
-#exampleInputEmail2{
-	background-color: #DCDCDC;
-	width: 300px;
-	border-radius: 20px 0 0 20px;
-}
-.search-btn{
-	width: 70px;
-	background-color: #000;
-	color: #fff;
-	border-radius: 0 20px 20px 0;
-}
-.glyphicon-phone{
-	float: left;
-	margin-right: 10px;
-}
-.login{
-	background-color: #ff8a20;
-	border-radius: 0;
-	color:#fff;
-}
-
-
-/*NAVBAR*/
-nav{
-	background-color: #ff8925;
-}
-ul{
-	margin:0;
-	padding: 0;
-}
-li{
-	display: block;
-	list-style: none;
-	padding: 0;
-	float: left;
-	width: 14.21%;
-	border-right: solid 1px #DCDCDC;
-	text-align: center;
-	line-height: 40px;
-	height: 40px;
-}
-li:hover{
-	background-color: #000;
-}
 a{
 	color: #fff;
 }
@@ -72,6 +17,83 @@ a:active{
 	background-color: #000;
 	color: #fff;
 }
+
+.orange-b {
+	background-color: #ff8925;
+	padding: 7px 50px;
+	border: none;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+/******************** HEADER *********************/
+header {
+	height: 80px;
+}
+header .logo-header{
+	height: 60px;
+	margin-top: 10px;
+	width: auto;
+}
+header .recherche {
+	margin-top: 23px;
+	position: relative;
+	width: 400px;
+}
+header .search-field {
+	background-color: #DCDCDC;
+	border: none;
+	border-radius: 20px 0 0 20px;
+	position: absolute;
+	padding: 6px 12px;
+	width: calc(100% - 91px);
+	left: 0;
+}
+header .go-button {
+	background-color: #000;
+	border: none;
+	border-radius: 0 20px 20px 0;
+	padding: 6px 36px;
+	color: #fff;
+	position: absolute;
+	right: 0;
+}
+header .phone {
+	margin-top: 28px;
+}
+header .phone span {
+	margin-right: 10px;
+}
+header .login{
+	background-color: #ff8a20;
+	border-radius: 0;
+	border: none;
+	color:#fff;
+	margin-top: 23px;
+}
+/******************** /HEADER *********************/
+/******************** NAVBAR *********************/
+nav{
+	background-color: #ff8925;
+}
+nav ul{
+	margin:0;
+	padding: 0;
+}
+nav li{
+	display: block;
+	list-style: none;
+	padding: 0;
+	float: left;
+	width: 14.21%;
+	border-right: solid 1px #DCDCDC;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+}
+nav li:hover{
+	background-color: #000;
+}
+
 /*NAVBAR DROPDOWN*/
 .dropdown {
     position: relative;
@@ -100,15 +122,7 @@ a:active{
 .dropdown:hover .dropbtn {
     background-color: #000;
 }
-
-.orange-b {
-	background-color: #ff8925;
-	padding: 7px 50px;
-	border: none;
-	font-weight: 600;
-	margin-bottom: 10px;
-}
-
+/******************** /NAVBAR *********************/
 /******************** JUMBOTRON *********************/
 .jumbomango {
 	box-sizing: border-box;
