@@ -61,6 +61,17 @@ $(function(){
 		}
 	})
 
+	$('.initially-hidden').hide();
 
+	$('.show-more').on('click',function(e){
+		e.preventDefault();
+		$($(this).data('more')).slideToggle();
+		console.log($($(this).data('more')));
+		if ($(this).find('span').text()=="PLUS") {
+			$(this).find('span').text("MOINS");
+		} else {
+			$(this).find('span').text("PLUS");
+		};
+	});
 
 })
