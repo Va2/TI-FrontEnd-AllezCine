@@ -298,6 +298,28 @@ span.genre{
 	font-weight: 900;
 }
 /******************* /LIBRARY *********************/
+/******************** SHOP *********************/
+.fleches {
+	text-align: right;
+}
+.blksqr{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	background-color: #000;
+	position: relative;
+}
+.blksqr span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.blksqr:hover{
+	font-size: 20px;
+}
+/******************* /SHOP *********************/
 /******************** CONTACT *********************/
 #contact {
 	margin-top: 30px;
