@@ -1,3 +1,16 @@
+.cookies {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+.close {
+	opacity: 1;
+}
 .main-container{
 	border-top: solid 2px #ff8925;
 	width: 100%;

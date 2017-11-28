@@ -9,7 +9,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -554,11 +554,34 @@
 				</ul>
 			</div>
 		</footer>
-
+		<div id="myModal" class="modal" tabindex="-1" role="dialog" data-show="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Age control</h4>
+					</div>
+					<div class="modal-body">
+						<p>Please, enter your birthday so we can be sure you may watch porn:</p>
+						<input type="text" class="form-control" id="okForPorn">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="sendPornAge">Go!</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div class="cookies">
+			<div class="alert alert-dismissible" role="alert">
+				En utilisant les services de AllezCine, vous acceptez notre Utilisation des Cookies et le Transfert de Données hors de l'UE. Nous et nos partenaires opérons mondialement et utilisons des cookies, y compris pour des statistiques, de la personnalisation et des publicités.
+				<button class="btn btn-danger" id="acceptCookies">OK</button>
+			</div>
+		</div>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- 		
+ 		<script src="js/moment-with-locales.min.js"></script>
+ 		<script src="js/bootstrap-datetimepicker.min.js"></script>
+ 		<script src="js/script.js"></script>
 	</body>
 </html>
