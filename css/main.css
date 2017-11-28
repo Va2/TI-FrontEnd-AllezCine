@@ -319,6 +319,34 @@ span.genre{
 .blksqr:hover{
 	font-size: 20px;
 }
+.trailer-row{
+	display: flex;
+}
+.trailer-video {
+	box-sizing: border-box;
+	display: inline-block;
+	flex:1;
+}
+.trailer-video iframe{
+	width: 100%;
+	height: 100%;
+}
+.trailer-description {
+	flex:1;
+	display: inline-block;
+	background-color: #ff8925;
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+
+.trailer-description dt {
+	color: #666;
+}
+.trailer-description dd {
+	color: #fff;
+	margin-bottom: 10px;
+}
 /******************* /SHOP *********************/
 /******************** CONTACT *********************/
 #contact {
