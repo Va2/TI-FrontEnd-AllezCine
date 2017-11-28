@@ -298,6 +298,56 @@ span.genre{
 	font-weight: 900;
 }
 /******************* /LIBRARY *********************/
+/******************** SHOP *********************/
+.fleches {
+	text-align: right;
+}
+.blksqr{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	background-color: #000;
+	position: relative;
+}
+.blksqr span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.blksqr:hover{
+	font-size: 20px;
+}
+.trailer-row{
+	display: flex;
+}
+.trailer-video {
+	box-sizing: border-box;
+	display: inline-block;
+	flex:1;
+}
+.trailer-video iframe{
+	width: 100%;
+	height: 100%;
+}
+.trailer-description {
+	flex:1;
+	display: inline-block;
+	background-color: #ff8925;
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+
+.trailer-description dt {
+	color: #666;
+}
+.trailer-description dd {
+	color: #fff;
+	margin-bottom: 10px;
+}
+/******************* /SHOP *********************/
 /******************** CONTACT *********************/
 #contact {
 	margin-top: 30px;
