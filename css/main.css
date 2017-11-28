@@ -4,7 +4,24 @@
 	margin:0;
 	padding: 0;
 }
-a{
+h2 {
+	position: relative;
+	margin-left: 100px;
+}
+h2:before {
+	content: ' ';
+	background-color: #ff8925;
+	display: inline-block;
+	width: 6px;
+	height: 45px;
+	position: absolute;
+	top: -5px;
+	left: -30px;
+}
+h4{
+	font-size: 13px;
+}
+a {
 	color: #fff;
 }
 
@@ -30,8 +47,8 @@ header {
 	height: 80px;
 }
 header .logo-header{
-	height: 60px;
-	margin-top: 10px;
+	height: 40px;
+	margin-top: 20px;
 	width: auto;
 }
 header .recherche {
@@ -71,6 +88,29 @@ header .login{
 	margin-top: 23px;
 }
 /******************** /HEADER *********************/
+/******************** MODAL *********************/
+#loginModal h4.modal-title{
+	font-size: 20px;
+}
+form ul{
+	list-style: none;
+}
+.btn-default{
+	border:none;
+	background-color: rgb(242,240,241);
+}
+.btn-default:hover{
+	background-color: rgb(238,235,235);
+}
+.btn-primary{
+	border:none;
+	background-color: rgb(249,136,38);
+}
+.btn-primary:hover{
+	background-color: rgb(249,136,38);
+}
+
+/******************** /MODAL *********************/
 /******************** NAVBAR *********************/
 nav{
 	background-color: #ff8925;
@@ -85,6 +125,7 @@ nav li{
 	padding: 0;
 	float: left;
 	width: 14.21%;
+	border-left: solid 1px #DCDCDC;
 	border-right: solid 1px #DCDCDC;
 	text-align: center;
 	line-height: 40px;
@@ -122,6 +163,9 @@ nav li:hover{
 .dropdown:hover .dropbtn {
     background-color: #000;
 }
+.glyphicon-triangle-bottom{
+	margin-left: 7px;
+}
 /******************** /NAVBAR *********************/
 /******************** JUMBOTRON *********************/
 .jumbomango {
@@ -131,11 +175,11 @@ nav li:hover{
 }
 /*LEFT*/
 .jumboleft {
+	display: inline-block;
 	box-sizing: border-box;
 	width: 75%;
 	height: 500px;
 	background-color: grey;
-	float: left;
 	position: relative;
 }
 .jumboleft img{
@@ -186,17 +230,10 @@ nav li:hover{
 	width: calc( 100% - 180px );
 	color: #fff;
 }
-.orange-b {
-	background-color: #ff8925;
-	padding: 7px 50px;
-	border: none;
-	font-weight: 600;
-	margin-bottom: 10px;
-}
-
 
 /*RIGHT*/
 .jumboright {
+	display: inline-block;
 	box-sizing: border-box;
 	width: 25%;
 	height: 500px;
@@ -261,12 +298,13 @@ nav li:hover{
 .library-movie{
 	width: 100%;
 	display: flex;
+	margin: 20px 0;
 	border: solid 2px #DCDCDC;
+	border-radius: 0;
 }
 .library-featured{
 	width: 100%;
 	display: flex;
-	margin: 20px 0;
 }
 .library-movie-col{
 	width: 20%;
@@ -278,19 +316,168 @@ nav li:hover{
 	margin: 20px;
 	text-align: center;
 }
-.library img {	
-	width:100%;
+.library-movie img, .library-featured img{	
+	width:180px;
 	display: inline-block;
-
 }
 span.year{
 	float: left;
+	font-size: 11px;
 }
 span.genre{
 	float: right;
+	font-size: 11px;
 	font-weight: 900;
 }
+
+
+ul.filter-genre {
+	list-style: none;
+	padding: 0;
+	padding: 20px 0 0 20px;
+}
+li.filter-genre {
+	display: inline-block;
+	margin-right: 1px;
+}
+li.filter-genre a {
+	background-color: rgba(242,240,241);
+	padding: 6px 15px;	
+	min-width: 70px;
+	display: inline-block;
+	text-align: center;
+	color: #000;
+}
+li.filter-genre.ACTIVE a {
+	background-color: #ff8925;
+	color: #fff;
+}
+li.filter-genre a:hover {
+	background-color: #CCC;
+}
+
+
+
+.library-movie-col .caption p {
+	width: 99px;
+	margin-left: 45px;
+}
+.library-featured-col .caption p {
+	width: 99px;
+	margin-left: 25px;
+}
+
+
+ul.more-movies{
+	list-style: none;
+	padding: 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+li.more-movies{
+	display: inline-block;
+	margin-right: 1px;
+	background-color: rgb(249,136,38);
+}
+li.more-movies a {
+	background-color: rgb(249,136,38);
+	padding: 10px 20px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	font-weight: 800;
+}
+li.more-movies a:hover {
+	background-color: #CCC;
+}
 /******************* /LIBRARY *********************/
+/******************** CONTACT *********************/
+#contact {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#contact h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+#contact ul {
+	list-style: none;
+	padding: 0;
+}
+#contact ul li {
+	padding: 7px 0;
+}
+
+
+.carre-gris {
+	height: 225px;
+	width: 100%;
+	background-color: rgb(52,52,52);
+	color:#fff;
+	position: relative;
+	padding: 25px 20px;
+}
+.rond {
+	width: 40px;
+	height: 40px;
+	background-color: #ff8925;
+	border-radius: 100%;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 20px);
+}
+.rond span {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#contact .social li {
+	padding: 2px;
+}
+#contact .social a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	width: 150px;
+}
+#contact .social li a i {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin-right: 10px;
+}
+#contact .social .face a {
+	background-color: #3b5998;
+}
+#contact .social .twit a {
+	background-color: #00aced;
+}
+#contact .social .goog a {
+	background-color: #D34836;
+}
+.send-message {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	margin-top: 20px;
+	padding: 10px 20px;
+}
+
+#formulaire {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#formulaire input, #formulaire textarea {
+	margin-bottom: 13px;
+	border:1px solid grey;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+/******************* /CONTACT *********************/
 /******************* FOOTER *********************/
 
 footer {
