@@ -69,6 +69,7 @@ a:active{
   position: fixed;
   top: 50%;
   box-sizing: content-box;
+  z-index: 9999;
 }
 .social ul {
   padding: 0px;
@@ -497,28 +498,28 @@ li.more-movies a:hover {
 	transform: translate(-50%, -50%);
 }
 
-#contact .social li {
+#contact .social-media li {
 	padding: 2px;
 }
-#contact .social a {
+#contact .social-media a {
 	display: inline-block;
 	height: 40px;
 	line-height: 40px;
 	width: 150px;
 }
-#contact .social li a i {
+#contact .social-media li a i {
 	width: 40px;
 	height: 40px;
 	text-align: center;
 	margin-right: 10px;
 }
-#contact .social .face a {
+#contact .social-media .face a {
 	background-color: #3b5998;
 }
-#contact .social .twit a {
+#contact .social-media .twit a {
 	background-color: #00aced;
 }
-#contact .social .googleplus a {
+#contact .social-media .goog a {
 	background-color: #D34836;
 }
 .send-message {
