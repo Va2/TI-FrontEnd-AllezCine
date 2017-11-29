@@ -74,6 +74,7 @@ a:focus{
   top: 50%;
   box-sizing: content-box;
   z-index: 9999;
+  width: 1px;
 }
 .social ul {
   padding: 0px;
