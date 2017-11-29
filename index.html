@@ -1134,25 +1134,27 @@
 			<!-- CONTACT FORM -->
 		</div>
 		<div class="container" id="formulaire">
-			<div class="row">
-				<div class="col-xs-6">
-					<input class="form-control" type="text" placeholder="FIRST NAME">
-				</div>
-				<div class="col-xs-6">
-					<input class="form-control" type="text" placeholder="LAST NAME">
-				</div>
+			<form action="" id="fake">
+				<div class="row">
+					<div class="col-xs-6">
+						<input class="form-control" type="text" placeholder="FIRST NAME" id="f-name">
+					</div>
+					<div class="col-xs-6">
+						<input class="form-control" type="text" placeholder="LAST NAME" id="l-name">
+					</div>
 
-				<div class="col-xs-6">
-					<input class="form-control" type="text" placeholder="EMAIL">
+					<div class="col-xs-6">
+						<input class="form-control" type="text" placeholder="EMAIL" id="email">
+					</div>
+					<div class="col-xs-6">
+						<input class="form-control" type="text" placeholder="SUBJECT" id="subject">
+					</div>
+					<div class="col-xs-12">
+						<textarea class="form-control" cols="30" rows="10" placeholder="YOUR MESSAGE" id="message"></textarea>
+						<button type="submit" class="send-message">SEND MESSAGE</button>
+					</div>
 				</div>
-				<div class="col-xs-6">
-					<input class="form-control" type="text" placeholder="SUBJECT">
-				</div>
-				<div class="col-xs-12">
-					<textarea class="form-control" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
-					<button type="submit" class="send-message">SEND MESSAGE</button>
-				</div>
-			</div>
+			</form>
 		</div>
 		<!-- FOOTER -->
 		<footer>
@@ -1254,15 +1256,7 @@
 			</div>
 		</div>
 
-		<!-- MOVIE MODAL -->
-<!-- 		<div id="movieModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-		  <div class="modal-dialog modal-lg" role="document">
-		    <div class="modal-content">
-		      ...
-		    </div>
-		  </div>
-		</div>
- -->
+
 
 		<div id="myModal" class="modal" tabindex="-1" role="dialog" data-show="true">
 			<div class="modal-dialog" role="document">
@@ -1341,6 +1335,5 @@
  		<script src="js/jquery.dotdotdot.min.js"></script>
  		<script src="js/jquery.slidey.min.js"></script>
  		<script src="js/script.js"></script>
-		<a href="#" class="to-top"><span class="glyphicon glyphicon-arrow-up"></span></a>
 	</body>
 </html>

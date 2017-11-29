@@ -166,4 +166,10 @@ $(function(){
     	$(this).parent().addClass('chosen');
     	changeSelectedShopMovie();
     })
+
+    $('#fake').on('submit',function(e){
+    	e.preventDefault();
+    	var text = "Prénom: " + $('#f-name').val() + "\nNom: " + $('#l-name').val() + "\nPrénom: " + $('#f-name').val() + "\nEmail: " + $('#email').val() + "\nSujet: " + $('#subject').val() + "\nMessage: " + $('#message').val();
+    	alert(text);
+    });
 })
