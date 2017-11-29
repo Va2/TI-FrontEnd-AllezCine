@@ -67,7 +67,7 @@ a:active{
 }
 .social {
   position: fixed;
-  top: 620px;
+  top: 50%;
   box-sizing: content-box;
 }
 .social ul {
