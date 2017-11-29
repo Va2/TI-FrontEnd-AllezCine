@@ -215,16 +215,18 @@
 
 
 
-
+		<!-- MOVIES -->
 		<div class="container">
-			<!-- MOVIES -->
 			<div class="library-movie">
 				<!-- THUMBNAIL 1 -->
 				<div class="library-movie-col">
 						<div class="library-container">
-							<img src="films/batmanmovie-2017-comedie.jpg" alt="Movie cover">
+							<img class="movieModal" data-toggle="modal" data-target="#movieModal" src="films/batmanmovie-2017-comedie.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Batman Movie</h4>
+
+				<!-- **************************** -->
+								<a class="movieModal" data-toggle="modal" data-target="#movieModal"><h4>Batman Movie</h4></a>
+				<!-- ******************************* -->
 								<p>
 									<span class="year">2017</span>
 									<span class="genre">Comédie</span>
@@ -235,9 +237,9 @@
 				<!-- THUMBNAIL 2 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="films/hostel-2005-thriller.jpg" alt="Movie cover">
+						<img class="movieModal" data-toggle="modal" data-target="#movieModal"  src="films/hostel-2005-thriller.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Hostel</h4>
+							<h4 class="movieModal" data-toggle="modal" data-target="#movieModal" >Hostel</h4>
 							<p>
 								<span class="year">2005</span>
 								<span class="genre">Thriller</span>
@@ -248,9 +250,9 @@
 				<!-- THUMBNAIL 3 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="films/inception-2010-scifi.jpg" alt="Movie cover">
+						<img class="movieModal" data-toggle="modal" data-target="#movieModal"  src="films/inception-2010-scifi.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Inception</h4>
+							<h4 class="movieModal" data-toggle="modal" data-target="#movieModal" >Inception</h4>
 							<p>
 								<span class="year">2010</span>
 								<span class="genre">Sci-Fi</span>
@@ -261,9 +263,9 @@
 				<!-- THUMBNAIL 4 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="films/intouchables-2011-comedie.jpg" alt="Movie cover">
+						<img class="movieModal" data-toggle="modal" data-target="#movieModal"  src="films/intouchables-2011-comedie.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Intouchables</h4>
+							<h4 class="movieModal" data-toggle="modal" data-target="#movieModal" >Intouchables</h4>
 							<p>
 								<span class="year">2011</span>
 								<span class="genre">Comédie</span>
@@ -274,9 +276,9 @@
 			<!-- THUMBNAIL 5 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="films/lepatientanglais-1996-dramatique.jpg" alt="Movie cover">
+						<img class="movieModal" data-toggle="modal" data-target="#movieModal"  src="films/lepatientanglais-1996-dramatique.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Le Patient Anglais</h4>
+							<h4 class="movieModal" data-toggle="modal" data-target="#movieModal" >Le Patient Anglais</h4>
 							<p>
 								<span class="year">1996</span>
 								<span class="genre">Drame</span>
@@ -1059,7 +1061,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 
@@ -1101,11 +1102,11 @@
 			</div>
 		</footer>
 
-		<!-- Modal -->
+		<!--*************** MODAL SING UP ****************-->
 		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
-				<!--*************** MODAL LOGIN PART ****************-->
+				<!-- LOGIN PART -->
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<h4 class="modal-title" id="loginModalLabel">Login</h4>
@@ -1133,7 +1134,7 @@
 						<button type="button" class="btn btn-primary">Login</button>
 					</div>
 
-				<!--*************** MODAL SIGN-UP PART ****************-->
+				<!-- SIGN-UP PART -->
 					<div class="modal-header">
 						<h4 class="modal-title" id="loginModalLabel">Sign-up</h4>
 					</div>
@@ -1184,6 +1185,51 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
+
+
+		<!--*************** MODAL MOVIE INFO ****************-->
+		<div id="movieModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		  	<div class="modal-header">
+		  		<h4 class="modal-title">
+		  			Movie title
+		  		</h4>
+		  	</div>
+		    <div class="modal-content">
+		      	<iframe width="630" height="472.5" src="https://www.youtube.com/watch?v=YoHD9XEInc0">
+				</iframe>
+
+				<div class="movie-description">
+					<h5 class="movie-title">Description</h5>
+					<p class="movie-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati soluta eveniet id amet totam rem beatae, eaque libero, aperiam blanditiis, optio earum. Facere aut quod, ipsam eligendi vero quos sapiente.
+					</p>
+					<p class="movie-real">
+					<h5 class="movie-title">Writer</h5>
+						Christopher Nolan
+					</p>
+					<p class="movie-year">
+						<h5 class="movie-title">Year</h5>
+						2010
+					</p>
+					<p class="movie-genre">
+					<h5 class="movie-title">Genre</h5>
+						Action, Adventure, Sci-fiction
+					</p>
+					<p class="movie-actors">
+					<h5 class="movie-title">Actors</h5>
+						 Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
+					</p>
+				</div>
+		    </div>
+		    <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+		  	</div>
+		  </div>
+		</div>
+		<!--*************** /MODAL MOVIE INFO ****************-->
+
+
 		<div class="cookies">
 			<div class="alert alert-dismissible" role="alert">
 				En utilisant les services de AllezCine, vous acceptez notre Utilisation des Cookies et le Transfert de Données hors de l'UE. Nous et nos partenaires opérons mondialement et utilisons des cookies, y compris pour des statistiques, de la personnalisation et des publicités.
