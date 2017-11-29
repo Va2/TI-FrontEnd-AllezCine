@@ -86,4 +86,41 @@ $(function(){
     	height: 50
     });
 
+    function changeSelectedShopMovie(){
+    	$('.current-title').text($('#shop-movies-list .chosen .film-title').text());
+    	$('.current-plot').text($('#shop-movies-list .chosen .film-plot').text());
+    	$('.current-year').text($('#shop-movies-list .chosen .film-year').text());
+    	$('.current-genres').text($('#shop-movies-list .chosen .film-genres').text());
+    	$('.current-price').text($('#shop-movies-list .chosen .film-price').text());
+    	$('.trailer-video').html('<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/'+ $('#shop-movies-list .chosen .film-youtube').text() +'?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="current-trailer"></iframe>');
+    }
+    changeSelectedShopMovie();
+    $('.next-shop').click(function(e){
+    	e.preventDefault();
+    	var actual = $('#shop-movies-list .chosen');
+    	if (actual.next().length){
+	    	actual.next().addClass('chosen');
+    	} else {
+    		$('#shop-movies-list').last().children().first().addClass('chosen');
+    	}
+    	actual.removeClass('chosen');
+    	changeSelectedShopMovie();
+    });
+    $('.prev-shop').click(function(e){
+    	e.preventDefault();
+    	var actual = $('#shop-movies-list .chosen');
+    	if (actual.prev().length){
+	    	actual.prev().addClass('chosen');
+    	} else {
+    		$('#shop-movies-list').last().children().last().addClass('chosen');
+    	}
+	    actual.removeClass('chosen');
+    	changeSelectedShopMovie();
+    });
+    $('.choose-me').click(function(e){
+		e.preventDefault();
+    	$('#shop-movies-list .chosen').removeClass('chosen');
+    	$(this).parent().addClass('chosen');
+    	changeSelectedShopMovie();
+    })
 })
