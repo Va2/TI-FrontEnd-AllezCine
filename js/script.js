@@ -74,4 +74,16 @@ $(function(){
 		};
 	});
 
+
+    $("#slidey").slidey({
+        interval: 6000,
+        listCount: 5,
+        showList: true
+    });
+    $(".slidey-list-description").dotdotdot({
+    	tolerance: 0,
+    	truncate: "word",
+    	height: 50
+    });
+
 })

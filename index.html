@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
+		
+		<link href="css/jquery.slidey.css" rel="stylesheet">
 
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -18,35 +20,36 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<!-- SOCIAL MEDIA ICONS -->
 		<nav class="social" id="social">
-          <ul>
-              <li class="twitter">
-              	<a href="https://twitter.com/gian_michelle">
-              		Twitter <i class="fa fa-twitter"></i>
-              	</a>
-              </li>
-              <li class="fb">
-              	<a href="https://facebook.com/">
-              		Facebook <i class="fa fa-facebook"></i>
-              	</a>
-              </li>
-              <li class="dribble">
-              	<a href="http://dribbble.com/gian_michelle">
-              		Dribbble <i class="fa fa-dribbble"></i>
-              	</a>
-              </li>
-              <li class="google">
-              	<a href="http://behance.net/gianm">
-              		Google Plus <i class="fa fa-google-plus">
-              		</i>
-              	</a>
-              </li>
-          </ul>
-      	</nav>
+		  <ul>
+			  <li class="twitter">
+			  	<a href="https://twitter.com/gian_michelle">
+			  		Twitter <i class="fa fa-twitter"></i>
+			  	</a>
+			  </li>
+			  <li class="fb">
+			  	<a href="https://facebook.com/">
+			  		Facebook <i class="fa fa-facebook"></i>
+			  	</a>
+			  </li>
+			  <li class="dribble">
+			  	<a href="http://dribbble.com/gian_michelle">
+			  		Dribbble <i class="fa fa-dribbble"></i>
+			  	</a>
+			  </li>
+			  <li class="google">
+			  	<a href="http://behance.net/gianm">
+			  		Google Plus <i class="fa fa-google-plus">
+			  		</i>
+			  	</a>
+			  </li>
+		  </ul>
+	  	</nav>
 
 		<!-- HEADER -->
 		<div class="main-container">
@@ -114,125 +117,89 @@
 			</div>
 		</nav>
 						
-		<div class="jumbomango">
-			<div class="jumboleft">
-				<img src="images/the-legend-of-tarzan.jpeg">
-				<div class="caption">
-					<div class="p-bar"></div>
-					<button type="button" class="arrow left" aria-label="Left Align">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					</button>
-					<span class="description">
-						<button class="orange-b">TARZAN</button>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, nam, error. Ipsa quod unde eaque, vero temporibus laudantium libero voluptate odio quis blanditiis voluptatum nobis nulla reprehenderit illum quaerat magni!</p>
-					</span>
-					<button type="button" class="arrow right" aria-label="Left Align">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					</button>
-				</div>
-			</div>
-			<div class="jumboright">
+		<div class="container-fluid">
+			<div id="slidey">
 				<ul>
-					<li class="active">
-						<a href="">
-							<img src="images/tarzan-thumb.jpg" alt="">
-							<span>
-								<h3>Tarzan</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
-							</span>
-						</a>
+					<li>
+						<img src="films/1.jpg">
+						<p class='title'>Star Wars</p>
+						<p class='description'>After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force.</p>
+					</li>
+					<li><img src="films/2.jpg">
+						<p class='title'>Silicon Valley</p>
+						<p class='description'>Mike Judge brings his irreverent brand of humor to HBO in the new comedy series SILICON VALLEY. Partially inspired by Judge's own experiences as a Silicon Valley engineer in the late '80s, the show is a collaboration between Judge and Alec Berg.</p>
 					</li>
 					<li>
-						<a href="">
-							<img src="images/gris.png" alt="">
-							<span>
-								<h3>Lorem</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
-							</span>
-						</a>
+						<img src="films/3.jpg">
+						<p class='title'>Fringe</p>
+						<p class='description'>The Fringe team explore the blurring line between the possible and the impossible. They are encountering glitches in the world they are living in, face threats from a parallel universe and try to prevent events that will lead to the destruction of their own universe.</p>
 					</li>
 					<li>
-						<a href="">
-							<img src="images/gris.png" alt="">
-							<span>
-								<h3>Lorem</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
-							</span>
-						</a>
+						<img src="films/4.jpg">
+						<p class='title'>Assassin's Creed</p>
+						<p class='description'>When Callum Lynch (Michael Fassbender) explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.</p>
 					</li>
 					<li>
-						<a href="">
-							<img src="images/gris.png" alt="">
-							<span>
-								<h3>Lorem</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
-							</span>
-						</a>
+						<img src="films/5.jpg">
+						<p class='title'>Star Wars</p>
+						<p class='description'>Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance.</p>
 					</li>
-					<li>
-						<a href="">
-							<img src="images/gris.png" alt="">
-							<span>
-								<h3>Lorem</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
-							</span>
-						</a>
-					</li>
-				</ul>
+				</ul>					
 			</div>
+
 		</div>
 
 		<!-- MOVIES -->
 		<div id="movie" class="container">
 			<div class="library-movie">
-			<!-- THUMBNAIL 1 -->
+				<!-- THUMBNAIL 1 -->
 				<div class="library-movie-col">
 						<div class="library-container">
-							<a data-toggle="modal" data-target="movieModal"><img src="images/gris.png" alt="Movie cover"></a>
+							<img src="films/batmanmovie-2017-comedie.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Movie title</h4>
+								<h4>Batman Movie</h4>
 								<p>
-									<span class="year">Year</span>
-									<span class="genre">Genre</span>
+									<span class="year">2017</span>
+									<span class="genre">Comédie</span>
 								</p>
 							</div>
 						</div>
 				</div>
-			<!-- THUMBNAIL 2 -->
+				<!-- THUMBNAIL 2 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="images/gris.png" alt="Movie cover">
+						<img src="films/hostel-2005-thriller.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Movie title</h4>
+							<h4>Hostel</h4>
 							<p>
-								<span class="year">Year</span>
-								<span class="genre">Genre</span>
+								<span class="year">2005</span>
+								<span class="genre">Thriller</span>
 							</p>
 						</div>
 					</div>
 				</div>
-			<!-- THUMBNAIL 3 -->
+				<!-- THUMBNAIL 3 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="images/gris.png" alt="Movie cover">
+						<img src="films/inception-2010-scifi.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Movie title</h4>
+							<h4>Inception</h4>
 							<p>
-								<span class="year">Year</span>
-								<span class="genre">Genre</span>
+								<span class="year">2010</span>
+								<span class="genre">Sci-Fi</span>
 							</p>
 						</div>
 					</div>
 				</div>
-			<!-- THUMBNAIL 4 -->
+				<!-- THUMBNAIL 4 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="images/gris.png" alt="Movie cover">
+						<img src="films/intouchables-2011-comedie.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Movie title</h4>
+							<h4>Intouchables</h4>
 							<p>
-								<span class="year">Year</span>
-								<span class="genre">Genre</span>
+								<span class="year">2011</span>
+								<span class="genre">Comédie</span>
 							</p>
 						</div>
 					</div>
@@ -240,12 +207,12 @@
 			<!-- THUMBNAIL 5 -->
 				<div class="library-movie-col">
 					<div class="library-container">
-						<img src="images/gris.png" alt="Movie cover">
+						<img src="films/lepatientanglais-1996-dramatique.jpg" alt="Movie cover">
 						<div class="caption">
-							<h4>Movie title</h4>
+							<h4>Le Patient Anglais</h4>
 							<p>
-								<span class="year">Year</span>
-								<span class="genre">Genre</span>
+								<span class="year">1996</span>
+								<span class="genre">Drame</span>
 							</p>
 						</div>
 					</div>
@@ -272,12 +239,12 @@
 					<!-- THUMBNAIL 1 -->
 					<div class="library-featured-col">
 							<div class="library-container">
-								<img src="images/gris.png" alt="Movie cover">
+								<img src="films/batmanmovie-2017-comedie.jpg" alt="Movie cover">
 								<div class="caption">
-									<h4>Movie title</h4>
+									<h4>Batman Movie</h4>
 									<p>
-										<span class="year">Year</span>
-
+										<span class="year">2017</span>
+										<span class="genre">Comédie</span>
 									</p>
 								</div>
 							</div>
@@ -285,11 +252,12 @@
 					<!-- THUMBNAIL 2 -->
 					<div class="library-featured-col">
 						<div class="library-container">
-							<img src="images/gris.png" alt="Movie cover">
+							<img src="films/hostel-2005-thriller.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Movie title</h4>
+								<h4>Hostel</h4>
 								<p>
-									<span class="year">Year</span>
+									<span class="year">2005</span>
+									<span class="genre">Thriller</span>
 								</p>
 							</div>
 						</div>
@@ -297,11 +265,12 @@
 					<!-- THUMBNAIL 3 -->
 					<div class="library-featured-col">
 						<div class="library-container">
-							<img src="images/gris.png" alt="Movie cover">
+							<img src="films/inception-2010-scifi.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Movie title</h4>
+								<h4>Inception</h4>
 								<p>
-									<span class="year">Year</span>
+									<span class="year">2010</span>
+									<span class="genre">Sci-Fi</span>
 								</p>
 							</div>
 						</div>
@@ -309,23 +278,25 @@
 					<!-- THUMBNAIL 4 -->
 					<div class="library-featured-col">
 						<div class="library-container">
-							<img src="images/gris.png" alt="Movie cover">
+							<img src="films/intouchables-2011-comedie.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Movie title</h4>
+								<h4>Intouchables</h4>
 								<p>
-									<span class="year">Year</span>
+									<span class="year">2011</span>
+									<span class="genre">Comédie</span>
 								</p>
 							</div>
 						</div>
 					</div>
-					<!-- THUMBNAIL 5 -->
+				<!-- THUMBNAIL 5 -->
 					<div class="library-featured-col">
 						<div class="library-container">
-							<img src="images/gris.png" alt="Movie cover">
+							<img src="films/lepatientanglais-1996-dramatique.jpg" alt="Movie cover">
 							<div class="caption">
-								<h4>Movie title</h4>
+								<h4>Le Patient Anglais</h4>
 								<p>
-									<span class="year">Year</span>
+									<span class="year">1996</span>
+									<span class="genre">Drame</span>
 								</p>
 							</div>
 						</div>
@@ -1167,5 +1138,12 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+ 		<script src="js/moment-with-locales.min.js"></script>
+ 		<script src="js/bootstrap-datetimepicker.min.js"></script>
+ 		<script src="js/jquery.dotdotdot.min.js"></script>
+ 		<script src="js/jquery.slidey.min.js"></script>
+ 		<script src="js/script.js"></script>
+
 	</body>
 </html>
