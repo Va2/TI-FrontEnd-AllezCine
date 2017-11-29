@@ -51,8 +51,8 @@
 		  </ul>
 	  	</nav>
 
+		<!-- HEADER -->
 		<div class="main-container">
-			<!-- HEADER -->
 			<div class="container header">
 				<header>
 					<div class="row">
@@ -85,10 +85,10 @@
 			<div class="container">
 				<ul>
 					<li>
-						<a href="#" class="active">HOME</a>
+						<a href="#home" class="active">HOME</a>
 					</li>
 					<li class="dropdown">
-							<a class="dropbtn" href="#">
+							<a class="dropbtn" href="#featured-movies">
 								Movies
 								<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
 							</a>
@@ -99,8 +99,8 @@
 						</div>
 					</li>
 					<li class="dropdown">
-						<a class="dropbtn" href="#">
-							Movies
+						<a class="dropbtn" href="#featured-series">
+							Series
 							<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
 						</a>
 						<div class="dropdown-content">
@@ -149,11 +149,8 @@
 
 		</div>
 
-
-
-
-		<div class="container">
-			<!-- MOVIES -->
+		<!-- MOVIES -->
+		<div id="movie" class="container">
 			<div class="library-movie">
 				<!-- THUMBNAIL 1 -->
 				<div class="library-movie-col">
@@ -225,7 +222,7 @@
 
 
 		<!-- FEATURED MOVIES -->
-		<div class="container-fluid">
+		<div id="featured-movies" class="container-fluid">
 			<!-- TITLE -->
 			<h2>FEATURED MOVIES</h2>
 		</div>
@@ -558,7 +555,7 @@
 		</div>
 
 		<!-- FEATURED TV SERIES -->
-		<div class="container-fluid">
+		<div id="featured-series" class="container-fluid">
 			<!-- TITLE -->
 			<h2>FEATURED SERIES TV</h2>
 		</div>
@@ -571,7 +568,7 @@
 			</ul>
 			<div>
 	 			<!-- FEATURED MOVIES ROW 1 -->
-				<div class="library-featured">
+				<div id="featured-series" class="library-featured">
 					<!-- THUMBNAIL 1 -->
 					<div class="library-featured-col">
 							<div class="library-container">
@@ -1104,6 +1101,17 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- MOVIE MODAL -->
+<!-- 		<div id="movieModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      ...
+		    </div>
+		  </div>
+		</div>
+ -->
+
 		<div id="myModal" class="modal" tabindex="-1" role="dialog" data-show="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -1130,10 +1138,12 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
  		<script src="js/moment-with-locales.min.js"></script>
  		<script src="js/bootstrap-datetimepicker.min.js"></script>
  		<script src="js/jquery.dotdotdot.min.js"></script>
  		<script src="js/jquery.slidey.min.js"></script>
  		<script src="js/script.js"></script>
+
 	</body>
 </html>
