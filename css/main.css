@@ -33,8 +33,6 @@ h2:before {
 	top: -5px;
 	left: -30px;
 }
-
-
 a {
 	color: #fff;
 }
@@ -59,7 +57,6 @@ a:focus{
 	font-weight: 600;
 	margin-bottom: 10px;
 }
-
 /******************* SOCIAL MEDIA BUTTONS *********************/
 #social a {
   color: #fff;
@@ -154,7 +151,6 @@ li.google{
   box-sizing: content-box;
 }
 /******************* /SOCIAL MEDIA BUTTONS *********************/
-
 /******************** HEADER *********************/
 header {
 	height: 80px;
@@ -322,8 +318,6 @@ a.movieModal:hover{
 .library-featured h4{
 	font-size: 13px;
 }
-
-
 .library-movie-col{
 	width: 20%;
 }
@@ -338,7 +332,6 @@ a.movieModal:hover{
 	width:180px;
 	display: inline-block;
 }
-
 span.year{
 	float: left;
 	font-size: 11px;
@@ -348,8 +341,6 @@ span.genre{
 	font-size: 11px;
 	font-weight: 900;
 }
-
-
 ul.filter-genre {
 	list-style: none;
 	padding: 0;
@@ -374,9 +365,6 @@ li.filter-genre.ACTIVE a {
 li.filter-genre a:hover {
 	background-color: #CCC;
 }
-
-
-
 .library-movie-col .caption p {
 	width: 99px;
 	margin-left: 45px;
@@ -385,8 +373,6 @@ li.filter-genre a:hover {
 	width: 99px;
 	margin-left: 25px;
 }
-
-
 ul.more-movies{
 	list-style: none;
 	padding: 0;
@@ -410,6 +396,60 @@ li.more-movies a:hover {
 	background-color: #CCC;
 }
 /******************* /LIBRARY *********************/
+/******************* LIBRARY FEATURED MOVIES *********************/
+#featured-movies-list{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	display: flex;
+  	align-items: stretch;
+}
+#featured-movies-list ul{
+    flex-wrap: wrap;
+}
+#featured-movies-list li {
+	flex-grow: 1;
+	width: 0;
+	margin-right: 10px;
+	opacity: .8;
+}
+#featured-movies-list li:last-child {
+	margin-right: 0;
+}
+#featured-movies-list li a {
+	color: #000;
+}
+#featured-movies-list li a .thumby{
+	width: 100%;
+	overflow: hidden;
+}
+#featured-movies-list li a .thumby img{
+	width: 100%;
+	height: auto;
+}
+#featured-movies-list h4{
+	text-align: center;
+}
+#featured-movies-list li.chosen {
+	opacity: 1;
+}
+#featured-movies-list li:hover {
+	opacity: 1;
+}
+#featured-movies-list p {
+	clear: both;
+	padding: 0 10px;
+}
+#featured-movies-list .left{
+	float: left;
+}
+#featured-movies-list .right{
+	float: right;
+}
+#featured-movies-list .price{
+	color: #ff8a20;
+}
+/******************* /LIBRARY FEATURED MOVIES *********************/
 /******************** SHOP *********************/
 .fleches {
 	text-align: right;
