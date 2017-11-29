@@ -71,11 +71,6 @@
 							<!-- Button trigger login modal -->
 							<button type="button" class="btn btn-default login" data-toggle="modal" data-target="#loginModal">LOGIN
 							</button>
-
-
-
-
-
 						</div>
 					</div>
 				</header>
@@ -187,16 +182,13 @@
 			</div>
 		</div>
 
-
-
-
 		<div class="container">
 			<!-- MOVIES -->
-			<div class="library-movie">
+			<div id="movie" class="library-movie">
 			<!-- THUMBNAIL 1 -->
 				<div class="library-movie-col">
 						<div class="library-container">
-							<img src="images/gris.png" alt="Movie cover">
+							<a data-toggle="modal" data-target="movieModal"><img src="images/gris.png" alt="Movie cover"></a>
 							<div class="caption">
 								<h4>Movie title</h4>
 								<p>
@@ -276,7 +268,7 @@
 			</ul>
 			<div>
 	 			<!-- FEATURED MOVIES ROW 1 -->
-				<div class="library-featured">
+				<div id="featured-movies" class="library-featured">
 					<!-- THUMBNAIL 1 -->
 					<div class="library-featured-col">
 							<div class="library-container">
@@ -605,7 +597,7 @@
 			</ul>
 			<div>
 	 			<!-- FEATURED MOVIES ROW 1 -->
-				<div class="library-featured">
+				<div id="featured-series" class="library-featured">
 					<!-- THUMBNAIL 1 -->
 					<div class="library-featured-col">
 							<div class="library-container">
@@ -1138,6 +1130,17 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- MOVIE MODAL -->
+<!-- 		<div id="movieModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      ...
+		    </div>
+		  </div>
+		</div>
+ -->
+
 		<div id="myModal" class="modal" tabindex="-1" role="dialog" data-show="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -1164,6 +1167,5 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- 		
 	</body>
 </html>
