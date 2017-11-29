@@ -1,4 +1,47 @@
 $(function(){
+
+	var $root = $('html, body');
+	$('a[href^="#"]').click(function() {
+	    var href = $.attr(this, 'href');
+
+	    $root.animate({
+	        scrollTop: $(href).offset().top
+	    }, 500, function () {
+	        window.location.hash = href;
+	    });
+
+	    return false;
+	});
+
+
+
+
+	var a = document.createElement("A");
+	a.setAttribute("href", "#");
+	a.classList.add('to-top');
+	var span = document.createElement("SPAN");
+	span.classList.add('glyphicon');
+	span.classList.add('glyphicon-arrow-up');
+	a.appendChild(span);
+	a.addEventListener('click',function(e){
+		e.preventDefault();
+	    $root.animate({
+	        scrollTop: 0,
+	    }, 500, function () {
+	        window.location.hash = "#top";
+	    });
+	});
+	document.body.appendChild(a);
+
+	$(document).scroll(function() {
+	  var y = $(this).scrollTop();
+	  if (y > 400) {
+	    $('.to-top').fadeIn();
+	  } else {
+	    $('.to-top').fadeOut();
+	  }
+	});
+
 	function setCookie(cname, cvalue, exdays) {
 	    var d = new Date();
 	    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
