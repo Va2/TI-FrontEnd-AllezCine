@@ -40,14 +40,18 @@ a {
 }
 a:hover{
 	color: #fff;
-	background-color: #000;
 	text-decoration: none;
 }
 a:active{
 	background-color: #000;
 	color: #fff;
+	text-decoration: none;
 }
-
+a:focus{
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
 .orange-b {
 	background-color: #ff8925;
 	padding: 7px 50px;
@@ -453,6 +457,55 @@ li.more-movies a:hover {
 .trailer-description dd {
 	color: #fff;
 	margin-bottom: 10px;
+}
+#shop-movies-list{
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	display: flex;
+  	align-items: stretch;
+}
+#shop-movies-list li {
+	flex-grow: 1;
+	width: 0;
+	margin-right: 10px;
+	opacity: .8;
+}
+#shop-movies-list li:last-child {
+	margin-right: 0;
+}
+#shop-movies-list li a {
+	color: #000;
+}
+#shop-movies-list li a .thumby{
+	width: 100%;
+	overflow: hidden;
+}
+#shop-movies-list li a .thumby img{
+	width: 100%;
+	height: auto;
+}
+#shop-movies-list h4{
+	text-align: center;
+}
+#shop-movies-list li.chosen {
+	opacity: 1;
+}
+#shop-movies-list li:hover {
+	opacity: 1;
+}
+#shop-movies-list p {
+	clear: both;
+	padding: 0 10px;
+}
+#shop-movies-list .left{
+	float: left;
+}
+#shop-movies-list .right{
+	float: right;
+}
+#shop-movies-list .price{
+	color: #ff8a20;
 }
 /******************* /SHOP *********************/
 /******************** CONTACT *********************/
