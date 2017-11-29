@@ -280,11 +280,28 @@ nav.main li:hover{
 	width: 100%;
 }
 /******************* /JUMBOTRON *********************/
+/******************** MOVIE MODAL *********************/
+.modal-lg{
+	background-color: #fff;
+	width: 800px;
+}
+h4.modal-title{
+	color: rgb(249,136,38);
+}
+h5.movie-title{
+	color: rgb(249,136,38);
+}
+/******************** /MOVIE MODAL *********************/
 /******************* LIBRARY *********************/
 .library-movie h4{
 	font-size: 13px;
 }
-
+a.movieModal{
+	color: #000;
+}
+a.movieModal:hover{
+	color: #DCDCDC;
+}
 .library-movie{
 	width: 100%;
 	display: flex;
