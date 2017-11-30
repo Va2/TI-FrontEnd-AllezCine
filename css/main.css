@@ -417,7 +417,7 @@ li.more-movies a:hover {
 	overflow: hidden;
 }
 #movies-list li a .thumby img{
-	width: 83%;
+	width: 100%;
 	height: auto;
 }
 #movies-list h4{
