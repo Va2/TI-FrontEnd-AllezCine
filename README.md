@@ -76,4 +76,5 @@ Travail d'intégration Front-End AllezCiné d'Aldebaran et Vadim
 * Peaufinage et Clean Up
 * G.Maps
 
-Live demo:
+
+[Live demo ici](http://desombergh.be/avmovies/)
