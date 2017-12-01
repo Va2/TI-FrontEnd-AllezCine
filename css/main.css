@@ -286,44 +286,18 @@ nav.main li:hover{
 .modal-trailer-description{
 	padding: 10px 15px 0 0;
 }
-/******************** /MOVIE MODAL *********************/
-/******************* LIBRARY *********************/
-.library-movie h4{
-	font-size: 13px;
-}
 a.movieModal{
 	color: #000;
 }
 a.movieModal:hover{
 	color: #DCDCDC;
 }
-.library-movie{
-	width: 100%;
-	display: flex;
-	margin: 20px 0;
-	border: solid 2px #DCDCDC;
-	border-radius: 7px;
-}
-.library-featured{
-	width: 100%;
-	display: flex;
-}
-.library-featured h4{
-	font-size: 13px;
-}
-.library-movie-col{
-	width: 20%;
-}
-.library-featured-col{
-	width: 16.66%;
-}
-.library-container{
-	margin: 20px;
-	text-align: center;
-}
-.library-movie img, .library-featured img{	
-	width:180px;
-	display: inline-block;
+/******************** /MOVIE MODAL *********************/
+/******************* MOVIE SECTION (first) *********************/
+#movie {
+	margin-top: 15px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 5px;
 }
 span.year{
 	float: left;
@@ -358,36 +332,7 @@ li.filter-genre.ACTIVE a {
 li.filter-genre a:hover {
 	background-color: #CCC;
 }
-.library-movie-col .caption p {
-	width: 99px;
-	margin-left: 45px;
-}
-.library-featured-col .caption p {
-	width: 99px;
-	margin-left: 25px;
-}
-ul.more-movies{
-	list-style: none;
-	padding: 0;
-	padding: 20px 0 0 0;
-	text-align: center;
-}
-li.more-movies{
-	display: inline-block;
-	margin-right: 1px;
-	background-color: rgb(249,136,38);
-}
-li.more-movies a {
-	background-color: rgb(249,136,38);
-	padding: 10px 20px;
-	display: inline-block;
-	text-align: center;
-	color: #fff;
-	font-weight: 800;
-}
-li.more-movies a:hover {
-	background-color: #CCC;
-}
+
 /******************* /LIBRARY *********************/
 /******************* LIBRARY MOVIES *********************/
 #movies-list{
@@ -733,6 +678,8 @@ footer form {
 	border: 1px solid #fff;
 }
 /****************** /FOOTER *********************/
+
+/****************** BOUTON TO TOP *********************/
 .to-top {
 	position: fixed;
 	width: 50px;
