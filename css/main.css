@@ -445,33 +445,17 @@ li.more-movies a:hover {
 #featured-movies-list{
 	list-style: none;
 	padding: 0;
-	margin: 20px 0;
-	display: flex;
-  	align-items: stretch;
+	margin: 0;
 }
-#featured-movies-list ul{
-    flex-wrap: wrap;
-}
+
 #featured-movies-list li {
-	flex-grow: 1;
-	width: 0;
-	margin-right: 10px;
 	opacity: .8;
-}
-#featured-movies-list li:last-child {
-	margin-right: 0;
+	margin-bottom: 15px;
 }
 #featured-movies-list li a {
 	color: #000;
 }
-#featured-movies-list li a .thumby{
-	width: 100%;
-	overflow: hidden;
-}
-#featured-movies-list li a .thumby img{
-	width: 100%;
-	height: auto;
-}
+
 #featured-movies-list h4{
 	text-align: center;
 }
@@ -492,6 +476,7 @@ li.more-movies a:hover {
 	float: right;
 	font-weight: 700;
 }
+
 /******************* /LIBRARY FEATURED MOVIES *********************/
 /******************** SHOP *********************/
 .fleches {
@@ -681,6 +666,11 @@ li.more-movies a:hover {
 	border-radius: 3px;
 }
 
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: blue;
+}
 /******************* /CONTACT *********************/
 /******************* FOOTER *********************/
 
